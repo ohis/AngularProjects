@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src='bower_components/angular/angular.js'></script>
+    <script type="text/javascript">
+    var myAppModule = angular.module('myApp',[]);
+
+    myAppModule.controller('TestController',function(){
+      this.name = 'fred';
+      console.log(this);
+    });
+
+
+    </script>
+    <title></title>
+  </head>
+  <body >
+    <div ng-controller = 'TestController'>
+      {{this.name}}
+
+    </div>
+    <h1></h1>
+
+  </body>
+</html>
